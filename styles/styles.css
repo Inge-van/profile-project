@@ -86,7 +86,9 @@ h2 {
 .project-description {
   padding: 120px 60px 0;
 }
-
+.profile-picture {
+  max-width: 70%;
+}
 @media (max-width: 960px) {
   h1 {
     font-size: 44px;
