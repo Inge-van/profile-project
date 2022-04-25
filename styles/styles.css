@@ -28,7 +28,7 @@ h2 {
   font-size: 62px;
 }
 
-h4 {
+h3 {
   font-size: 48px;
 }
 p {
@@ -39,7 +39,7 @@ p {
 .hero {
   background-color: var(--secondary-color);
   text-align: center;
-  padding: 160px 20px;
+  padding: 80px 20px;
 }
 .hero h2 {
   font-weight: normal;
@@ -54,7 +54,7 @@ p {
 }
 
 .content-container {
-  padding: 160px 20px;
+  padding: 60px 20px;
 }
 .content h1 {
   font-size: 64px;
@@ -101,6 +101,8 @@ p {
 .profile-picture {
   max-width: 70%;
   border-radius: 60px;
+  display: block;
+  margin: 0 auto;
 }
 .logo {
   max-height: 40px;
@@ -166,16 +168,13 @@ footer .social-links a:hover {
   background-color: var(--branding-color);
 }
 
-@media (max-width: 960px) {
+@media (max-width: 992px) {
   h1 {
     font-size: 44px;
     line-height: 56px;
   }
   h2 {
     font-size: 44px;
-  }
-  .hero {
-    padding: 80px 20px;
   }
   .project-description {
     padding: 0;
