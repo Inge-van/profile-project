@@ -1,6 +1,7 @@
 :root {
-  --branding-color: #6c63ff;
-  --secondary-color: #f9f7fe;
+  --branding-color: #e16428;
+  --secondary-color: #f6e9e9;
+  --third-color: #363333;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
 }
@@ -16,12 +17,14 @@ h5,
 h6 {
   font-family: var(--heading-font-family);
   font-weight: bold;
+  color: var(--third-color);
 }
 h1 {
   font-family: var(--heading-font-family);
   font-weight: bold;
   font-size: 96px;
   line-height: 1.5;
+  color: var(--third-color);
 }
 
 h2 {
@@ -35,6 +38,10 @@ p {
   font-weight: normal;
   font-size: 16px;
   line-height: 30px;
+  color: var(--third-color);
+}
+a {
+  color: var(--third-color);
 }
 .hero {
   background-color: var(--secondary-color);
@@ -50,7 +57,7 @@ p {
   font-size: 36px;
   font-weight: bold;
   margin: 0;
-  color: #272142;
+  color: var(--third-color);
 }
 
 .content-container {
@@ -79,11 +86,17 @@ p {
 
 .btn-branding {
   background-color: var(--branding-color);
+  border: 1px solid var(--branding-color);
   border-radius: 4px;
-  color: white;
+  color: var(--secondary-color);
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
+  transition: all 100ms ease-in-out;
+}
+.btn-branding:hover {
+  color: var(--branding-color);
+  background-color: var(--secondary-color);
 }
 
 .btn-branding-outline {
@@ -93,10 +106,19 @@ p {
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
+  transition: all 100ms ease-in-out;
+}
+
+.btn-branding-outline:hover {
+  color: var(--secondary-color);
+  background-color: var(--branding-color);
 }
 
 .project-description {
   padding: 120px 60px 0;
+}
+.img-paris {
+  max-width: 80%;
 }
 .profile-picture {
   max-width: 70%;
@@ -123,7 +145,7 @@ nav li {
 }
 nav a {
   text-decoration: none;
-  color: #272142;
+  color: var(--third-color);
   transition: all 100ms ease-in-out;
 }
 nav a:hover,
@@ -146,7 +168,7 @@ footer .contact-box {
 
 footer .email-link {
   text-decoration: none;
-  color: black;
+  color: var(--third-color);
   font-size: 24px;
 }
 footer .email-link:hover {
@@ -164,12 +186,13 @@ footer .social-links a {
 }
 
 footer .social-links a:hover {
-  color: white;
+  color: var(--secondary-color);
   background-color: var(--branding-color);
 }
 
 @media (max-width: 992px) {
-  h1 {
+  h1,
+  .content h1 {
     font-size: 44px;
     line-height: 56px;
   }
